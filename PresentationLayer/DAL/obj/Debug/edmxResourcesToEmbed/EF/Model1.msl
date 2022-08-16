@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="Easy_TravelsEntities">
+    <EntitySetMapping Name="BookedHotels">
+      <EntityTypeMapping TypeName="Model.BookedHotel">
+        <MappingFragment StoreEntitySet="BookedHotel">
+          <ScalarProperty Name="TouristID" ColumnName="TouristID" />
+          <ScalarProperty Name="TouristName" ColumnName="TouristName" />
+          <ScalarProperty Name="TouristPhone" ColumnName="TouristPhone" />
+          <ScalarProperty Name="HotelName" ColumnName="HotelName" />
+          <ScalarProperty Name="Place" ColumnName="Place" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Offer" ColumnName="Offer" />
+          <ScalarProperty Name="No_of_Days" ColumnName="No_of_Days" />
+          <ScalarProperty Name="TotalAmount" ColumnName="TotalAmount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HotelRegs">
+      <EntityTypeMapping TypeName="Model.HotelReg">
+        <MappingFragment StoreEntitySet="HotelReg">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Place" ColumnName="Place" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Inqs">
+      <EntityTypeMapping TypeName="Model.Inq">
+        <MappingFragment StoreEntitySet="Inq">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Question" ColumnName="Question" />
+          <ScalarProperty Name="Answer" ColumnName="Answer" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Reports">
+      <EntityTypeMapping TypeName="Model.Report">
+        <MappingFragment StoreEntitySet="Report">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Topic" ColumnName="Topic" />
+          <ScalarProperty Name="Details" ColumnName="Details" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RoomLists">
+      <EntityTypeMapping TypeName="Model.RoomList">
+        <MappingFragment StoreEntitySet="RoomList">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Place" ColumnName="Place" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Offer" ColumnName="Offer" />
+          <ScalarProperty Name="ExtraInfo" ColumnName="ExtraInfo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tokens">
+      <EntityTypeMapping TypeName="Model.Token">
+        <MappingFragment StoreEntitySet="Tokens">
+          <ScalarProperty Name="ExpiredAt" ColumnName="ExpiredAt" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="TokenKey" ColumnName="TokenKey" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
